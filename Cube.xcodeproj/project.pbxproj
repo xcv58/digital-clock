@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		DF13A7F12B6F082D000D0FBC /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = DF13A7F02B6F082D000D0FBC /* RealityKitContent */; };
 		DF13A7F32B6F082D000D0FBC /* CubeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13A7F22B6F082D000D0FBC /* CubeApp.swift */; };
-		DF13A7F52B6F082D000D0FBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13A7F42B6F082D000D0FBC /* ContentView.swift */; };
+		DF13A7F52B6F082D000D0FBC /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13A7F42B6F082D000D0FBC /* ClockView.swift */; };
 		DF13A7F72B6F082D000D0FBC /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13A7F62B6F082D000D0FBC /* ImmersiveView.swift */; };
 		DF13A7F92B6F082D000D0FBC /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = DF13A7F82B6F082D000D0FBC /* ImageBasedLighting.skybox */; };
 		DF13A7FB2B6F082F000D0FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF13A7FA2B6F082F000D0FBC /* Assets.xcassets */; };
 		DF13A7FE2B6F082F000D0FBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF13A7FD2B6F082F000D0FBC /* Preview Assets.xcassets */; };
 		DF13A8092B6F082F000D0FBC /* CubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13A8082B6F082F000D0FBC /* CubeTests.swift */; };
 		DF9CB0A62B793E70001A43DC /* BatteryInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB0A52B793E70001A43DC /* BatteryInfoView.swift */; };
+		DF9CB0A82B796080001A43DC /* DigitalClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB0A72B796080001A43DC /* DigitalClock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +33,7 @@
 		DF13A7EB2B6F082D000D0FBC /* Cube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13A7EF2B6F082D000D0FBC /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		DF13A7F22B6F082D000D0FBC /* CubeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeApp.swift; sourceTree = "<group>"; };
-		DF13A7F42B6F082D000D0FBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DF13A7F42B6F082D000D0FBC /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		DF13A7F62B6F082D000D0FBC /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		DF13A7F82B6F082D000D0FBC /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
 		DF13A7FA2B6F082F000D0FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +42,7 @@
 		DF13A8042B6F082F000D0FBC /* CubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13A8082B6F082F000D0FBC /* CubeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeTests.swift; sourceTree = "<group>"; };
 		DF9CB0A52B793E70001A43DC /* BatteryInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryInfoView.swift; sourceTree = "<group>"; };
+		DF9CB0A72B796080001A43DC /* DigitalClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalClock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				DF13A7F22B6F082D000D0FBC /* CubeApp.swift */,
-				DF13A7F42B6F082D000D0FBC /* ContentView.swift */,
+				DF13A7F42B6F082D000D0FBC /* ClockView.swift */,
+				DF9CB0A72B796080001A43DC /* DigitalClock.swift */,
 				DF9CB0A52B793E70001A43DC /* BatteryInfoView.swift */,
 				DF13A7F62B6F082D000D0FBC /* ImmersiveView.swift */,
 				DF13A7F82B6F082D000D0FBC /* ImageBasedLighting.skybox */,
@@ -224,7 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF13A7F52B6F082D000D0FBC /* ContentView.swift in Sources */,
+				DF13A7F52B6F082D000D0FBC /* ClockView.swift in Sources */,
+				DF9CB0A82B796080001A43DC /* DigitalClock.swift in Sources */,
 				DF13A7F32B6F082D000D0FBC /* CubeApp.swift in Sources */,
 				DF9CB0A62B793E70001A43DC /* BatteryInfoView.swift in Sources */,
 				DF13A7F72B6F082D000D0FBC /* ImmersiveView.swift in Sources */,

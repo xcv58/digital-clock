@@ -4,8 +4,9 @@ import SwiftUI
 struct CubeApp: App {
     var body: some Scene {
         WindowGroup (id: "test") {
-            BatteryInfoView()
-//            ContentView()
+            DigitalClock()
+//            BatteryInfoView()
+//            ClockView()
         }
         .windowStyle(.automatic)
         .defaultSize(CGSize(width: 400, height: 200))

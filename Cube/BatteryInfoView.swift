@@ -6,40 +6,48 @@ struct BatteryInfoView: View {
     @State private var batteryState: UIDevice.BatteryState = UIDevice.current.batteryState
 
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 4)
-                .stroke(lineWidth: 2)
-                .foregroundColor(.gray)
-                .frame(width: 70, height: 30) // Adjust for horizontal orientation
-                .overlay(
-                    HStack(spacing: 0) {
-                        // Battery level
-                        RoundedRectangle(cornerRadius: 3)
-                            .fill(batteryLevelColor)
-                            .frame(width: CGFloat(batteryLevel) * 68, height: 28) // Adjust width for battery level
-                        Spacer(minLength: 0) // Keeps the filled part to the left
+        HStack{
+            Spacer()
+            VStack{
+                ZStack {
+                    RoundedRectangle(cornerRadius: 4)
+                        .stroke(lineWidth: 2)
+                        .foregroundColor(.gray)
+                        .frame(width: 70, height: 30) // Adjust for horizontal orientation
+                        .overlay(
+                            HStack(spacing: 0) {
+                                // Battery level
+                                RoundedRectangle(cornerRadius: 3)
+                                    .fill(batteryLevelColor)
+                                    .frame(width: CGFloat(max(0, batteryLevel)) * 68, height: 28) // Adjust width for battery level
+                                Spacer(minLength: 0) // Keeps the filled part to the left
+                            }
+                        )
+                    
+                    // Battery nipple
+                    RoundedRectangle(cornerRadius: 1)
+                        .frame(width: 5, height: 14) // Size of the nipple
+                        .offset(x: 36, y: 0) // Adjust based on the main body's size
+                        .foregroundColor(.gray)
+                    
+                    HStack(spacing: 2) {
+                        Text("\(Int(batteryLevel * 100))%")
+                            .font(.caption)
+                            .foregroundColor(textColorForBatteryLevel(batteryLevel))
+                            .shadow(color: shadowColorForBatteryLevel(batteryLevel), radius: 1, x: 0, y: 0)
+                        
+                        if batteryState == .charging {
+                            Image(systemName: "bolt.fill")
+                                .foregroundColor(.accentColor)
+                                .shadow(color: shadowColorForBatteryLevel(batteryLevel), radius: 1, x: 0, y: 0)
+                        }
                     }
-                )
-            
-            // Battery nipple
-            RoundedRectangle(cornerRadius: 1)
-                .frame(width: 5, height: 14) // Size of the nipple
-                .offset(x: 36, y: 0) // Adjust based on the main body's size
-                .foregroundColor(.gray)
-
-            HStack(spacing: 2) {
-                Text("\(Int(batteryLevel * 100))%")
-                    .font(.caption)
-                    .foregroundColor(textColorForBatteryLevel(batteryLevel))
-                    .shadow(color: shadowColorForBatteryLevel(batteryLevel), radius: 1, x: 0, y: 0)
-
-                if batteryState == .charging {
-                    Image(systemName: "bolt.fill")
-                        .foregroundColor(.accentColor)
-                    .shadow(color: shadowColorForBatteryLevel(batteryLevel), radius: 1, x: 0, y: 0)
+                    .offset(y: 0) // Adjust the vertical position as needed
                 }
+                Spacer()
             }
-            .offset(y: 0) // Adjust the vertical position as needed
+            .offset(x: -8)
+            .padding()
         }
         .onAppear {
             UIDevice.current.isBatteryMonitoringEnabled = true
@@ -77,7 +85,7 @@ struct BatteryInfoView: View {
             return .white // Use white text for darker backgrounds.
         }
     }
-
+    
     
     private var batteryLevelColor: Color {
         switch batteryLevel {
