@@ -1,10 +1,3 @@
-//
-//  CubeApp.swift
-//  Cube
-//
-//  Created by Yihong Chen on 2/3/24.
-//
-
 import SwiftUI
 
 @main
@@ -13,9 +6,9 @@ struct CubeApp: App {
         WindowGroup (id: "test") {
             ContentView()
         }
-
-        ImmersiveSpace(id: "ImmersiveSpace") {
-            ImmersiveView()
-        }.immersionStyle(selection: .constant(.progressive), in: .progressive)
+        .windowStyle(.automatic)
+        .defaultSize(CGSize(width: 360, height: 180))
+        .windowResizability(.contentSize)
     }
 }
+

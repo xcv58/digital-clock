@@ -1,18 +1,9 @@
-//
-//  ContentView.swift
-//  Cube
-//
-//  Created by Yihong Chen on 2/3/24.
-//
-
 import SwiftUI
 import RealityKit
 import RealityKitContent
 
 struct ContentView: View {
 
-//    @State private var showImmersiveSpace = false
-//    @State private var immersiveSpaceIsShown = false
     @State private var currentTime: String = ""
     @Environment(\.openWindow) private var openWindow
 
@@ -30,44 +21,23 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-//            Model3D(named: "Scene", bundle: realityKitContentBundle)
-//                .padding(.bottom, 50)
-
-            Text(currentTime)
-                .font(.largeTitle)
-                .onAppear(perform: updateCurrentTime)
-                .onReceive(timer) { _ in
-                    self.updateCurrentTime()
-                }
-
-//            Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
-//                .toggleStyle(.button)
-//                .padding(.top, 50)
+            GeometryReader { geometry in
+                Text(currentTime)
+                    .bold()
+                    .font(.system(size: geometry.size.width * 0.17)) // Adjust the multiplier as needed
+                    .padding(.top)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
+                    .onAppear(perform: updateCurrentTime)
+                    .onReceive(timer) { _ in
+                        self.updateCurrentTime()
+                    }
+            }
         }
         .padding()
         .onTapGesture {
             openWindow(id: "test")
         }
-
-//        .onChange(of: showImmersiveSpace) { _, newValue in
-//            Task {
-//                if newValue {
-//                    switch await openImmersiveSpace(id: "ImmersiveSpace") {
-//                    case .opened:
-//                        immersiveSpaceIsShown = true
-//                    case .error, .userCancelled:
-//                        fallthrough
-//                    @unknown default:
-//                        immersiveSpaceIsShown = false
-//                        showImmersiveSpace = false
-//                    }
-//                } else if immersiveSpaceIsShown {
-//                    await dismissImmersiveSpace()
-//                    immersiveSpaceIsShown = false
-//                }
-//            }
-//        }
-        
+        .aspectRatio(contentMode: .fill)
     }
 }
 
