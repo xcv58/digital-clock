@@ -24,9 +24,9 @@ struct ContentView: View {
             GeometryReader { geometry in
                 Text(currentTime)
                     .bold()
-                    .font(.system(size: geometry.size.width * 0.17)) // Adjust the multiplier as needed
-                    .padding(.top)
-                    .frame(width: geometry.size.width, height: geometry.size.height)
+//                    .font(.largeTitle)
+//                    .font(.system(size: geometry.size.width * 0.17)) // Adjust the multiplier as needed
+//                    .frame(width: geometry.size.width, height: geometry.size.height)
                     .onAppear(perform: updateCurrentTime)
                     .onReceive(timer) { _ in
                         self.updateCurrentTime()

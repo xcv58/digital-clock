@@ -4,10 +4,11 @@ import SwiftUI
 struct CubeApp: App {
     var body: some Scene {
         WindowGroup (id: "test") {
-            ContentView()
+            BatteryInfoView()
+//            ContentView()
         }
         .windowStyle(.automatic)
-        .defaultSize(CGSize(width: 360, height: 180))
+        .defaultSize(CGSize(width: 400, height: 200))
         .windowResizability(.contentSize)
     }
 }
