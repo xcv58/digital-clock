@@ -13,7 +13,7 @@ struct BatteryInfoView: View {
                     RoundedRectangle(cornerRadius: 4)
                         .stroke(lineWidth: 2)
                         .foregroundColor(.gray)
-                        .frame(width: 70, height: 30) // Adjust for horizontal orientation
+                        .frame(width: 60, height: 30) // Adjust for horizontal orientation
                         .overlay(
                             HStack(spacing: 0) {
                                 // Battery level
@@ -31,15 +31,14 @@ struct BatteryInfoView: View {
                         .foregroundColor(.gray)
                     
                     HStack(spacing: 2) {
-                        Text("\(Int(batteryLevel * 100))%")
+                        Text("\(Int(batteryLevel * 100))")
                             .font(.caption)
                             .foregroundColor(textColorForBatteryLevel(batteryLevel))
                             .shadow(color: shadowColorForBatteryLevel(batteryLevel), radius: 1, x: 0, y: 0)
                         
                         if batteryState == .charging {
                             Image(systemName: "bolt.fill")
-                                .foregroundColor(.accentColor)
-                                .shadow(color: shadowColorForBatteryLevel(batteryLevel), radius: 1, x: 0, y: 0)
+                                .foregroundColor(chargingColorForBatteryLevel(batteryLevel))
                         }
                     }
                     .offset(y: 0) // Adjust the vertical position as needed
@@ -86,6 +85,14 @@ struct BatteryInfoView: View {
         }
     }
     
+    private func chargingColorForBatteryLevel(_ level: Float) -> Color {
+        // This is a simplistic approach. You might need to adjust it based on your app's theme or colors.
+        if level > 0.5 {
+            return .white // Use black text for lighter backgrounds.
+        } else {
+            return .green // Use white text for darker backgrounds.
+        }
+    }
     
     private var batteryLevelColor: Color {
         switch batteryLevel {

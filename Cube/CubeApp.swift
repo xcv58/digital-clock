@@ -2,15 +2,16 @@ import SwiftUI
 
 @main
 struct CubeApp: App {
+    var settingsViewModel = SettingsViewModel()
+
     var body: some Scene {
-        WindowGroup (id: "test") {
+        WindowGroup (id: "main") {
             DigitalClock()
-//            BatteryInfoView()
-//            ClockView()
+                .environmentObject(settingsViewModel)
+                .animation(.default, value: settingsViewModel.isSettingsOpen)
         }
         .windowStyle(.automatic)
         .defaultSize(CGSize(width: 400, height: 200))
-        .windowResizability(.contentSize)
+        .windowResizability(.contentMinSize)
     }
 }
-

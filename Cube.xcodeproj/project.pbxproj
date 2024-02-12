@@ -15,6 +15,8 @@
 		DF13A7FB2B6F082F000D0FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF13A7FA2B6F082F000D0FBC /* Assets.xcassets */; };
 		DF13A7FE2B6F082F000D0FBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF13A7FD2B6F082F000D0FBC /* Preview Assets.xcassets */; };
 		DF13A8092B6F082F000D0FBC /* CubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13A8082B6F082F000D0FBC /* CubeTests.swift */; };
+		DF1D01B82B7990550015A3F3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1D01B72B7990550015A3F3 /* SettingsView.swift */; };
+		DF1D01BC2B79923D0015A3F3 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1D01BB2B79923D0015A3F3 /* SettingsViewModel.swift */; };
 		DF9CB0A62B793E70001A43DC /* BatteryInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB0A52B793E70001A43DC /* BatteryInfoView.swift */; };
 		DF9CB0A82B796080001A43DC /* DigitalClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB0A72B796080001A43DC /* DigitalClock.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,8 @@
 		DF13A7FF2B6F082F000D0FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF13A8042B6F082F000D0FBC /* CubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13A8082B6F082F000D0FBC /* CubeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeTests.swift; sourceTree = "<group>"; };
+		DF1D01B72B7990550015A3F3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DF1D01BB2B79923D0015A3F3 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		DF9CB0A52B793E70001A43DC /* BatteryInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryInfoView.swift; sourceTree = "<group>"; };
 		DF9CB0A72B796080001A43DC /* DigitalClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalClock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				DF13A7F22B6F082D000D0FBC /* CubeApp.swift */,
+				DF1D01B72B7990550015A3F3 /* SettingsView.swift */,
 				DF13A7F42B6F082D000D0FBC /* ClockView.swift */,
+				DF1D01BB2B79923D0015A3F3 /* SettingsViewModel.swift */,
 				DF9CB0A72B796080001A43DC /* DigitalClock.swift */,
 				DF9CB0A52B793E70001A43DC /* BatteryInfoView.swift */,
 				DF13A7F62B6F082D000D0FBC /* ImmersiveView.swift */,
@@ -230,8 +236,10 @@
 				DF13A7F52B6F082D000D0FBC /* ClockView.swift in Sources */,
 				DF9CB0A82B796080001A43DC /* DigitalClock.swift in Sources */,
 				DF13A7F32B6F082D000D0FBC /* CubeApp.swift in Sources */,
+				DF1D01B82B7990550015A3F3 /* SettingsView.swift in Sources */,
 				DF9CB0A62B793E70001A43DC /* BatteryInfoView.swift in Sources */,
 				DF13A7F72B6F082D000D0FBC /* ImmersiveView.swift in Sources */,
+				DF1D01BC2B79923D0015A3F3 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
