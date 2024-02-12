@@ -8,6 +8,7 @@ struct SettingsView: View {
             HStack {
                 VStack {
                     Toggle("24 Hour", isOn: $settingsViewModel.enable24H)
+                    Toggle("Show Second", isOn: $settingsViewModel.showSecond)
                     Toggle("Show Battery Info", isOn: $settingsViewModel.showBatteryInfo)
                     Button("Back") {
                         settingsViewModel.isSettingsOpen = false

@@ -13,10 +13,11 @@ struct ClockView: View {
     
     func updateCurrentTime() {
         let formatter = DateFormatter()
-        formatter.timeStyle = .medium // This uses the HH:mm:ss format
         formatter.locale = Locale.current // Use the current locale or specify a particular locale
         if (settingsViewModel.enable24H) {
-          formatter.dateFormat = "HH:mm:ss" // Explicitly set to use 24-hour time format
+            formatter.dateFormat = settingsViewModel.showSecond ? "HH:mm:ss" : "HH:mm"
+        } else {
+            formatter.timeStyle = settingsViewModel.showSecond ? .medium : .short // This uses the HH:mm:ss format
         }
         currentTime = formatter.string(from: Date())
     }
