@@ -14,6 +14,7 @@ struct SettingsView: View {
                     }
                 }
                 .padding()
+                .frame(maxWidth: 400)
             }
         }
     }
