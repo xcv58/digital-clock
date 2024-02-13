@@ -33,9 +33,6 @@ struct ClockView: View {
                         }
             }
             .padding()
-            .onTapGesture {
-                settingsViewModel.isSettingsOpen = true
-            }
             .aspectRatio(contentMode: .fit)
     }
 }

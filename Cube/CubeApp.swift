@@ -6,12 +6,13 @@ struct CubeApp: App {
 
     var body: some Scene {
         WindowGroup (id: "main") {
-            DigitalClock()
-                .environmentObject(settingsViewModel)
-                .animation(.default, value: settingsViewModel.isSettingsOpen)
+            NavigationStack {
+                DigitalClock()
+            }
+            .environmentObject(settingsViewModel)
         }
         .windowStyle(.automatic)
         .defaultSize(CGSize(width: 400, height: 200))
-        .windowResizability(.contentMinSize)
+        .windowResizability(.contentSize)
     }
 }

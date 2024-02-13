@@ -35,8 +35,6 @@ class SettingsViewModel: ObservableObject {
         }
     }
     
-    @Published var isSettingsOpen: Bool = false
-    
     init() {
         // Initialize from UserDefaults, providing default values if not found
         self.enable24H = UserDefaults.standard.bool(forKey: UserDefaults.Keys.enable24H)

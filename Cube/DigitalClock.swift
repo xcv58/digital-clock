@@ -5,17 +5,14 @@ struct DigitalClock: View {
     
     var body: some View {
         ZStack {
-            if settingsViewModel.isSettingsOpen {
-                SettingsView().transition(.opacity)
-            } else {
-                if (settingsViewModel.showBatteryInfo) {
-                    BatteryInfoView()
-                }
+            if (settingsViewModel.showBatteryInfo) {
+                BatteryInfoView()
+            }
+            NavigationLink (destination: SettingsView()) {
                 ClockView()
             }
-        }.transition(.opacity)
+        }
     }
-
 }
 
 #Preview {
