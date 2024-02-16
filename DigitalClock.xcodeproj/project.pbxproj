@@ -32,7 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DF13A7EB2B6F082D000D0FBC /* Cube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF13A7EB2B6F082D000D0FBC /* DigitalClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13A7EF2B6F082D000D0FBC /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		DF13A7F22B6F082D000D0FBC /* CubeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeApp.swift; sourceTree = "<group>"; };
 		DF13A7F42B6F082D000D0FBC /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		DF13A7FA2B6F082F000D0FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF13A7FD2B6F082F000D0FBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF13A7FF2B6F082F000D0FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF13A8042B6F082F000D0FBC /* CubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF13A8042B6F082F000D0FBC /* DigitalClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitalClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13A8082B6F082F000D0FBC /* CubeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeTests.swift; sourceTree = "<group>"; };
 		DF1D01B72B7990550015A3F3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		DF1D01BB2B79923D0015A3F3 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
@@ -81,8 +81,8 @@
 		DF13A7EC2B6F082D000D0FBC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF13A7EB2B6F082D000D0FBC /* Cube.app */,
-				DF13A8042B6F082F000D0FBC /* CubeTests.xctest */,
+				DF13A7EB2B6F082D000D0FBC /* DigitalClock.app */,
+				DF13A8042B6F082F000D0FBC /* DigitalClockTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DF13A7EA2B6F082D000D0FBC /* Cube */ = {
+		DF13A7EA2B6F082D000D0FBC /* DigitalClock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF13A80C2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "Cube" */;
+			buildConfigurationList = DF13A80C2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "DigitalClock" */;
 			buildPhases = (
 				DF13A7E72B6F082D000D0FBC /* Sources */,
 				DF13A7E82B6F082D000D0FBC /* Frameworks */,
@@ -144,17 +144,17 @@
 			);
 			dependencies = (
 			);
-			name = Cube;
+			name = DigitalClock;
 			packageProductDependencies = (
 				DF13A7F02B6F082D000D0FBC /* RealityKitContent */,
 			);
 			productName = Cube;
-			productReference = DF13A7EB2B6F082D000D0FBC /* Cube.app */;
+			productReference = DF13A7EB2B6F082D000D0FBC /* DigitalClock.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DF13A8032B6F082F000D0FBC /* CubeTests */ = {
+		DF13A8032B6F082F000D0FBC /* DigitalClockTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF13A80F2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "CubeTests" */;
+			buildConfigurationList = DF13A80F2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "DigitalClockTests" */;
 			buildPhases = (
 				DF13A8002B6F082F000D0FBC /* Sources */,
 				DF13A8012B6F082F000D0FBC /* Frameworks */,
@@ -165,9 +165,9 @@
 			dependencies = (
 				DF13A8062B6F082F000D0FBC /* PBXTargetDependency */,
 			);
-			name = CubeTests;
+			name = DigitalClockTests;
 			productName = CubeTests;
-			productReference = DF13A8042B6F082F000D0FBC /* CubeTests.xctest */;
+			productReference = DF13A8042B6F082F000D0FBC /* DigitalClockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -189,7 +189,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DF13A7E62B6F082D000D0FBC /* Build configuration list for PBXProject "Cube" */;
+			buildConfigurationList = DF13A7E62B6F082D000D0FBC /* Build configuration list for PBXProject "DigitalClock" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -202,8 +202,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF13A7EA2B6F082D000D0FBC /* Cube */,
-				DF13A8032B6F082F000D0FBC /* CubeTests */,
+				DF13A7EA2B6F082D000D0FBC /* DigitalClock */,
+				DF13A8032B6F082F000D0FBC /* DigitalClockTests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,7 +256,7 @@
 /* Begin PBXTargetDependency section */
 		DF13A8062B6F082F000D0FBC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DF13A7EA2B6F082D000D0FBC /* Cube */;
+			target = DF13A7EA2B6F082D000D0FBC /* DigitalClock */;
 			targetProxy = DF13A8052B6F082F000D0FBC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -449,7 +449,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cube.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cube";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitalClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigitalClock";
 				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
@@ -470,7 +470,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cube.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cube";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitalClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigitalClock";
 				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
@@ -478,7 +478,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DF13A7E62B6F082D000D0FBC /* Build configuration list for PBXProject "Cube" */ = {
+		DF13A7E62B6F082D000D0FBC /* Build configuration list for PBXProject "DigitalClock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF13A80A2B6F082F000D0FBC /* Debug */,
@@ -487,7 +487,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF13A80C2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "Cube" */ = {
+		DF13A80C2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "DigitalClock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF13A80D2B6F082F000D0FBC /* Debug */,
@@ -496,7 +496,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF13A80F2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "CubeTests" */ = {
+		DF13A80F2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "DigitalClockTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF13A8102B6F082F000D0FBC /* Debug */,

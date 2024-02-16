@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DF13A7EA2B6F082D000D0FBC"
-               BuildableName = "Cube.app"
-               BlueprintName = "Cube"
-               ReferencedContainer = "container:Cube.xcodeproj">
+               BuildableName = "DigitalClock.app"
+               BlueprintName = "DigitalClock"
+               ReferencedContainer = "container:DigitalClock.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,9 +35,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DF13A8032B6F082F000D0FBC"
-               BuildableName = "CubeTests.xctest"
-               BlueprintName = "CubeTests"
-               ReferencedContainer = "container:Cube.xcodeproj">
+               BuildableName = "DigitalClockTests.xctest"
+               BlueprintName = "DigitalClockTests"
+               ReferencedContainer = "container:DigitalClock.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DF13A7EA2B6F082D000D0FBC"
-            BuildableName = "Cube.app"
-            BlueprintName = "Cube"
-            ReferencedContainer = "container:Cube.xcodeproj">
+            BuildableName = "DigitalClock.app"
+            BlueprintName = "DigitalClock"
+            ReferencedContainer = "container:DigitalClock.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -74,9 +74,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DF13A7EA2B6F082D000D0FBC"
-            BuildableName = "Cube.app"
-            BlueprintName = "Cube"
-            ReferencedContainer = "container:Cube.xcodeproj">
+            BuildableName = "DigitalClock.app"
+            BlueprintName = "DigitalClock"
+            ReferencedContainer = "container:DigitalClock.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
