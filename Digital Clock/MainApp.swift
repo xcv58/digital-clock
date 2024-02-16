@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct CubeApp: App {
+struct MainApp: App {
     var settingsViewModel = SettingsViewModel()
 
     var body: some Scene {

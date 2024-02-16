@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DF13A7F12B6F082D000D0FBC /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = DF13A7F02B6F082D000D0FBC /* RealityKitContent */; };
-		DF13A7F32B6F082D000D0FBC /* CubeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13A7F22B6F082D000D0FBC /* CubeApp.swift */; };
+		DF13A7F32B6F082D000D0FBC /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13A7F22B6F082D000D0FBC /* MainApp.swift */; };
 		DF13A7F52B6F082D000D0FBC /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13A7F42B6F082D000D0FBC /* ClockView.swift */; };
-		DF13A7F72B6F082D000D0FBC /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13A7F62B6F082D000D0FBC /* ImmersiveView.swift */; };
 		DF13A7F92B6F082D000D0FBC /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = DF13A7F82B6F082D000D0FBC /* ImageBasedLighting.skybox */; };
 		DF13A7FB2B6F082F000D0FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF13A7FA2B6F082F000D0FBC /* Assets.xcassets */; };
 		DF13A7FE2B6F082F000D0FBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF13A7FD2B6F082F000D0FBC /* Preview Assets.xcassets */; };
-		DF13A8092B6F082F000D0FBC /* CubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13A8082B6F082F000D0FBC /* CubeTests.swift */; };
+		DF13A8092B6F082F000D0FBC /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13A8082B6F082F000D0FBC /* Tests.swift */; };
 		DF1D01B82B7990550015A3F3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1D01B72B7990550015A3F3 /* SettingsView.swift */; };
 		DF1D01BC2B79923D0015A3F3 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1D01BB2B79923D0015A3F3 /* SettingsViewModel.swift */; };
 		DF9CB0A62B793E70001A43DC /* BatteryInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB0A52B793E70001A43DC /* BatteryInfoView.swift */; };
@@ -32,17 +31,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DF13A7EB2B6F082D000D0FBC /* DigitalClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF13A7EB2B6F082D000D0FBC /* Digital Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13A7EF2B6F082D000D0FBC /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
-		DF13A7F22B6F082D000D0FBC /* CubeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeApp.swift; sourceTree = "<group>"; };
+		DF13A7F22B6F082D000D0FBC /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		DF13A7F42B6F082D000D0FBC /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
-		DF13A7F62B6F082D000D0FBC /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		DF13A7F82B6F082D000D0FBC /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
 		DF13A7FA2B6F082F000D0FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF13A7FD2B6F082F000D0FBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF13A7FF2B6F082F000D0FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF13A8042B6F082F000D0FBC /* DigitalClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitalClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF13A8082B6F082F000D0FBC /* CubeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeTests.swift; sourceTree = "<group>"; };
+		DF13A8042B6F082F000D0FBC /* Digital ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Digital ClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF13A8082B6F082F000D0FBC /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		DF1D01B72B7990550015A3F3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		DF1D01BB2B79923D0015A3F3 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		DF9CB0A52B793E70001A43DC /* BatteryInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryInfoView.swift; sourceTree = "<group>"; };
@@ -71,9 +69,9 @@
 		DF13A7E22B6F082D000D0FBC = {
 			isa = PBXGroup;
 			children = (
-				DF13A7ED2B6F082D000D0FBC /* Cube */,
+				DF13A7ED2B6F082D000D0FBC /* Digital Clock */,
 				DF13A7EE2B6F082D000D0FBC /* Packages */,
-				DF13A8072B6F082F000D0FBC /* CubeTests */,
+				DF13A8072B6F082F000D0FBC /* Tests */,
 				DF13A7EC2B6F082D000D0FBC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,28 +79,24 @@
 		DF13A7EC2B6F082D000D0FBC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF13A7EB2B6F082D000D0FBC /* DigitalClock.app */,
-				DF13A8042B6F082F000D0FBC /* DigitalClockTests.xctest */,
+				DF13A7EB2B6F082D000D0FBC /* Digital Clock.app */,
+				DF13A8042B6F082F000D0FBC /* Digital ClockTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DF13A7ED2B6F082D000D0FBC /* Cube */ = {
+		DF13A7ED2B6F082D000D0FBC /* Digital Clock */ = {
 			isa = PBXGroup;
 			children = (
-				DF13A7F22B6F082D000D0FBC /* CubeApp.swift */,
-				DF1D01B72B7990550015A3F3 /* SettingsView.swift */,
-				DF13A7F42B6F082D000D0FBC /* ClockView.swift */,
-				DF1D01BB2B79923D0015A3F3 /* SettingsViewModel.swift */,
-				DF9CB0A72B796080001A43DC /* DigitalClock.swift */,
-				DF9CB0A52B793E70001A43DC /* BatteryInfoView.swift */,
-				DF13A7F62B6F082D000D0FBC /* ImmersiveView.swift */,
+				DF13A7F22B6F082D000D0FBC /* MainApp.swift */,
+				DFB4D4DF2B7F100F000437D0 /* Models */,
+				DFB4D4DE2B7F0FFB000437D0 /* Views */,
 				DF13A7F82B6F082D000D0FBC /* ImageBasedLighting.skybox */,
 				DF13A7FA2B6F082F000D0FBC /* Assets.xcassets */,
 				DF13A7FF2B6F082F000D0FBC /* Info.plist */,
 				DF13A7FC2B6F082F000D0FBC /* Preview Content */,
 			);
-			path = Cube;
+			path = "Digital Clock";
 			sourceTree = "<group>";
 		};
 		DF13A7EE2B6F082D000D0FBC /* Packages */ = {
@@ -121,20 +115,39 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DF13A8072B6F082F000D0FBC /* CubeTests */ = {
+		DF13A8072B6F082F000D0FBC /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DF13A8082B6F082F000D0FBC /* CubeTests.swift */,
+				DF13A8082B6F082F000D0FBC /* Tests.swift */,
 			);
-			path = CubeTests;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		DFB4D4DE2B7F0FFB000437D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF1D01B72B7990550015A3F3 /* SettingsView.swift */,
+				DF13A7F42B6F082D000D0FBC /* ClockView.swift */,
+				DF9CB0A72B796080001A43DC /* DigitalClock.swift */,
+				DF9CB0A52B793E70001A43DC /* BatteryInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DFB4D4DF2B7F100F000437D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF1D01BB2B79923D0015A3F3 /* SettingsViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DF13A7EA2B6F082D000D0FBC /* DigitalClock */ = {
+		DF13A7EA2B6F082D000D0FBC /* Digital Clock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF13A80C2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "DigitalClock" */;
+			buildConfigurationList = DF13A80C2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "Digital Clock" */;
 			buildPhases = (
 				DF13A7E72B6F082D000D0FBC /* Sources */,
 				DF13A7E82B6F082D000D0FBC /* Frameworks */,
@@ -144,17 +157,17 @@
 			);
 			dependencies = (
 			);
-			name = DigitalClock;
+			name = "Digital Clock";
 			packageProductDependencies = (
 				DF13A7F02B6F082D000D0FBC /* RealityKitContent */,
 			);
 			productName = Cube;
-			productReference = DF13A7EB2B6F082D000D0FBC /* DigitalClock.app */;
+			productReference = DF13A7EB2B6F082D000D0FBC /* Digital Clock.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DF13A8032B6F082F000D0FBC /* DigitalClockTests */ = {
+		DF13A8032B6F082F000D0FBC /* Digital ClockTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF13A80F2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "DigitalClockTests" */;
+			buildConfigurationList = DF13A80F2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "Digital ClockTests" */;
 			buildPhases = (
 				DF13A8002B6F082F000D0FBC /* Sources */,
 				DF13A8012B6F082F000D0FBC /* Frameworks */,
@@ -165,9 +178,9 @@
 			dependencies = (
 				DF13A8062B6F082F000D0FBC /* PBXTargetDependency */,
 			);
-			name = DigitalClockTests;
+			name = "Digital ClockTests";
 			productName = CubeTests;
-			productReference = DF13A8042B6F082F000D0FBC /* DigitalClockTests.xctest */;
+			productReference = DF13A8042B6F082F000D0FBC /* Digital ClockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -189,7 +202,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DF13A7E62B6F082D000D0FBC /* Build configuration list for PBXProject "DigitalClock" */;
+			buildConfigurationList = DF13A7E62B6F082D000D0FBC /* Build configuration list for PBXProject "Digital Clock" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -202,8 +215,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF13A7EA2B6F082D000D0FBC /* DigitalClock */,
-				DF13A8032B6F082F000D0FBC /* DigitalClockTests */,
+				DF13A7EA2B6F082D000D0FBC /* Digital Clock */,
+				DF13A8032B6F082F000D0FBC /* Digital ClockTests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,10 +248,9 @@
 			files = (
 				DF13A7F52B6F082D000D0FBC /* ClockView.swift in Sources */,
 				DF9CB0A82B796080001A43DC /* DigitalClock.swift in Sources */,
-				DF13A7F32B6F082D000D0FBC /* CubeApp.swift in Sources */,
+				DF13A7F32B6F082D000D0FBC /* MainApp.swift in Sources */,
 				DF1D01B82B7990550015A3F3 /* SettingsView.swift in Sources */,
 				DF9CB0A62B793E70001A43DC /* BatteryInfoView.swift in Sources */,
-				DF13A7F72B6F082D000D0FBC /* ImmersiveView.swift in Sources */,
 				DF1D01BC2B79923D0015A3F3 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF13A8092B6F082F000D0FBC /* CubeTests.swift in Sources */,
+				DF13A8092B6F082F000D0FBC /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +268,7 @@
 /* Begin PBXTargetDependency section */
 		DF13A8062B6F082F000D0FBC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DF13A7EA2B6F082D000D0FBC /* DigitalClock */;
+			target = DF13A7EA2B6F082D000D0FBC /* Digital Clock */;
 			targetProxy = DF13A8052B6F082F000D0FBC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -388,17 +400,19 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Cube/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Digital Clock/Preview Content\"";
 				DEVELOPMENT_TEAM = 5736QK4NZX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Digital Clock";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xcv58.Cube;
+				PRODUCT_BUNDLE_IDENTIFIER = "xcv58.digital-clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -414,17 +428,19 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Cube/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Digital Clock/Preview Content\"";
 				DEVELOPMENT_TEAM = 5736QK4NZX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Digital Clock";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xcv58.Cube;
+				PRODUCT_BUNDLE_IDENTIFIER = "xcv58.digital-clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -449,7 +465,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitalClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigitalClock";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Digital Clock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Digital Clock";
 				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
@@ -470,7 +486,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitalClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigitalClock";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Digital Clock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Digital Clock";
 				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
@@ -478,7 +494,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DF13A7E62B6F082D000D0FBC /* Build configuration list for PBXProject "DigitalClock" */ = {
+		DF13A7E62B6F082D000D0FBC /* Build configuration list for PBXProject "Digital Clock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF13A80A2B6F082F000D0FBC /* Debug */,
@@ -487,7 +503,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF13A80C2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "DigitalClock" */ = {
+		DF13A80C2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "Digital Clock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF13A80D2B6F082F000D0FBC /* Debug */,
@@ -496,7 +512,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF13A80F2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "DigitalClockTests" */ = {
+		DF13A80F2B6F082F000D0FBC /* Build configuration list for PBXNativeTarget "Digital ClockTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF13A8102B6F082F000D0FBC /* Debug */,
