@@ -10,9 +10,9 @@ struct CubeApp: App {
                 DigitalClock()
             }
             .environmentObject(settingsViewModel)
+            .frame(width: 400, height: 200)
         }
         .windowStyle(.automatic)
-        .defaultSize(CGSize(width: 400, height: 200))
         .windowResizability(.contentSize)
     }
 }
