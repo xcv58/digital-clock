@@ -9,6 +9,13 @@ extension UserDefaults {
     }
 }
 
+func value<T>(forKey key: String, defaultValue: T) -> T {
+    if let value = UserDefaults.standard.object(forKey: key) as? T {
+        return value
+    } else {
+        return defaultValue
+    }
+}
 
 class SettingsViewModel: ObservableObject {
     @Published var enable24H: Bool {
@@ -34,13 +41,12 @@ class SettingsViewModel: ObservableObject {
             UserDefaults.standard.set(timeZone, forKey: UserDefaults.Keys.timeZone)
         }
     }
+
     
     init() {
-        // Initialize from UserDefaults, providing default values if not found
-        self.enable24H = UserDefaults.standard.bool(forKey: UserDefaults.Keys.enable24H)
-        self.showBatteryInfo = UserDefaults.standard.bool(forKey: UserDefaults.Keys.showBatteryInfo)
-        self.showSecond = UserDefaults.standard.bool(forKey: UserDefaults.Keys.showSecond)
-        self.timeZone = UserDefaults.standard.string(forKey: UserDefaults.Keys.timeZone) ?? "UTC" // Default to UTC if not set
+        self.enable24H = value(forKey: UserDefaults.Keys.enable24H, defaultValue: true)
+        self.showBatteryInfo = value(forKey: UserDefaults.Keys.showBatteryInfo, defaultValue: true)
+        self.showSecond = value(forKey: UserDefaults.Keys.showSecond, defaultValue: true)
+        self.timeZone = value(forKey: UserDefaults.Keys.timeZone, defaultValue: "UTC")
     }
 }
-
