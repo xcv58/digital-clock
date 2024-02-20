@@ -5,7 +5,7 @@ import RealityKitContent
 struct ClockView: View {
 
     @State private var currentTime: String = ""
-    @EnvironmentObject var settingsViewModel: SettingsViewModel
+    @EnvironmentObject var view: WindowView
     @Environment(\.openWindow) private var openWindow
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -14,10 +14,10 @@ struct ClockView: View {
     func updateCurrentTime() {
         let formatter = DateFormatter()
         formatter.locale = Locale.current // Use the current locale or specify a particular locale
-        if (settingsViewModel.enable24H) {
-            formatter.dateFormat = settingsViewModel.showSecond ? "HH:mm:ss" : "HH:mm"
+        if (view.enable24H) {
+            formatter.dateFormat = view.showSecond ? "HH:mm:ss" : "HH:mm"
         } else {
-            formatter.timeStyle = settingsViewModel.showSecond ? .medium : .short // This uses the HH:mm:ss format
+            formatter.timeStyle = view.showSecond ? .medium : .short // This uses the HH:mm:ss format
         }
         currentTime = formatter.string(from: Date())
     }

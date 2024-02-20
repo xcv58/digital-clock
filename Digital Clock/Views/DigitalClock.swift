@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct DigitalClock: View {
-    @EnvironmentObject var settingsViewModel: SettingsViewModel
+    @EnvironmentObject var view: WindowView
     
     var body: some View {
         ZStack {
-            if (settingsViewModel.showBatteryInfo) {
+            if (view.showBatteryInfo) {
                 BatteryInfoView()
             }
             NavigationLink (destination: SettingsView()) {
@@ -15,7 +15,9 @@ struct DigitalClock: View {
             .statusBarHidden()
             .buttonStyle(.plain)
         }
-        .frame(width: 400, height: 200)
+        .onAppear{
+            view.setMainView()
+        }
     }
 }
 
