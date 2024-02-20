@@ -5,23 +5,31 @@ struct SettingsView: View {
     @EnvironmentObject var view: WindowView
     
     var body: some View {
-        ScrollView {
-            VStack {
-                Toggle("Battery", isOn: $view.showBatteryInfo)
-                Toggle("24 Hour", isOn: $view.enable24H)
-                Toggle("Second", isOn: $view.showSecond)
-                Button("New Window") {
-                    openWindow(value: WindowView().id)
+        VStack {
+            HStack {
+                Button(action: {
+                    view.mainView()
+                }) {
+                    Image(systemName: "arrow.left")
                 }
+                Text("Settings").font(.title)
                 Spacer()
             }
-            .padding([.horizontal])
-            .frame(maxWidth: 300)
+            ScrollView {
+                VStack {
+                    Toggle("Battery", isOn: $view.showBatteryInfo)
+                    Toggle("24 Hour", isOn: $view.enable24H)
+                    Toggle("Second", isOn: $view.showSecond)
+                    Button("New Window") {
+                        openWindow(value: WindowView().id)
+                    }
+                    Spacer()
+                }
+                .padding()
+                .frame(maxWidth: 300)
+            }
         }
-        .navigationTitle("Settings")
-        .onAppear {
-            view.setSettingsView()
-        }
+        .padding()
     }
 }
 

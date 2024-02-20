@@ -8,16 +8,12 @@ struct DigitalClock: View {
             if (view.showBatteryInfo) {
                 BatteryInfoView()
             }
-            NavigationLink (destination: SettingsView()) {
+            Button(action: view.settingsView) {
                 ClockView()
             }
-            .buttonBorderShape(.roundedRectangle)
-            .statusBarHidden()
+            .buttonBorderShape(.roundedRectangle(radius: 4))
             .buttonStyle(.plain)
             .padding()
-        }
-        .onAppear {
-            view.setMainView()
         }
     }
 }
