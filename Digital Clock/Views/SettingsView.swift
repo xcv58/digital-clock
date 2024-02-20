@@ -15,10 +15,10 @@ struct SettingsView: View {
                 }
                 Spacer()
             }
+            .padding([.horizontal])
+            .frame(maxWidth: 300)
         }
         .navigationTitle("Settings")
-        .padding([.leading, .trailing])
-        .frame(maxWidth: 300)
         .onAppear {
             view.setSettingsView()
         }
