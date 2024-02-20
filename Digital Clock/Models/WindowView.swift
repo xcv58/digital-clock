@@ -32,13 +32,16 @@ class WindowView: Identifiable, Codable, Hashable, ObservableObject {
     var id: String
     @Published var width: CGFloat = 400
     @Published var height: CGFloat = 200
+    @Published var showClock = true
     
     public func setMainView() {
         self.setDimensions(width: 400, height: 200)
+        self.showClock = true
     }
     
     public func setSettingsView() {
         self.setDimensions(width: 400, height: 300)
+        self.showClock = false
     }
     
     private func setDimensions(width: CGFloat, height: CGFloat) {

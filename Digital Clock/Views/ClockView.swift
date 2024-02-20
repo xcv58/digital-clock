@@ -23,14 +23,12 @@ struct ClockView: View {
     }
     
     var body: some View {
-            VStack {
-                    Text(currentTime)
-                        .font(.extraLargeTitle)
-                        .bold()
-                        .onAppear(perform: updateCurrentTime)
-                        .onReceive(timer) { _ in
-                            self.updateCurrentTime()
-                        }
+        Text(currentTime)
+            .font(.extraLargeTitle)
+            .bold()
+            .onAppear(perform: updateCurrentTime)
+            .onReceive(timer) { _ in
+                self.updateCurrentTime()
             }
             .padding()
             .aspectRatio(contentMode: .fit)

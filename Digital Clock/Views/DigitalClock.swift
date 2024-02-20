@@ -14,8 +14,9 @@ struct DigitalClock: View {
             .buttonBorderShape(.roundedRectangle)
             .statusBarHidden()
             .buttonStyle(.plain)
+            .padding()
         }
-        .onAppear{
+        .onAppear {
             view.setMainView()
         }
     }
