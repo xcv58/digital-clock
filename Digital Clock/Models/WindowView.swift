@@ -1,5 +1,8 @@
+import os
 import Foundation
 import CoreGraphics // For CGSize and CGPoint
+
+let logger = Logger(subsystem: "com.xcv58.digital-clock", category: "Models")
 
 // Generates a key for a specific window's setting
 func keyForWindow(_ windowID: String, key: String) -> String {
@@ -25,6 +28,7 @@ func loadWindowIDs() -> [String] {
 }
 
 func saveWindowIDs(_ ids: [String]) {
+    logger.info("Save Window IDs: \(ids.joined(separator: ",")).")
     UserDefaults.standard.set(ids, forKey: "windowIDs")
 }
 
@@ -55,6 +59,10 @@ class WindowView: Identifiable, Codable, Hashable, ObservableObject {
         self.showBatteryInfo = value(forKey: UserDefaults.Keys.showBatteryInfo, windowID: self.id, defaultValue: true)
         self.showSecond = value(forKey: UserDefaults.Keys.showSecond, windowID: self.id, defaultValue: true)
         self.timeZone = value(forKey: UserDefaults.Keys.timeZone, windowID: self.id, defaultValue: "UTC")
+        let windowIds = loadWindowIDs()
+        if !windowIds.contains(id) {
+            saveWindowIDs(windowIds + [self.id])
+        }
     }
     
     enum CodingKeys: String, CodingKey {
