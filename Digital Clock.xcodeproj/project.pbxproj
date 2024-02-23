@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF13A7F12B6F082D000D0FBC /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = DF13A7F02B6F082D000D0FBC /* RealityKitContent */; };
 		DF13A7F32B6F082D000D0FBC /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13A7F22B6F082D000D0FBC /* MainApp.swift */; };
 		DF13A7F52B6F082D000D0FBC /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13A7F42B6F082D000D0FBC /* ClockView.swift */; };
 		DF13A7F92B6F082D000D0FBC /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = DF13A7F82B6F082D000D0FBC /* ImageBasedLighting.skybox */; };
@@ -56,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF13A7F12B6F082D000D0FBC /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +163,6 @@
 			);
 			name = "Digital Clock";
 			packageProductDependencies = (
-				DF13A7F02B6F082D000D0FBC /* RealityKitContent */,
 			);
 			productName = Cube;
 			productReference = DF13A7EB2B6F082D000D0FBC /* Digital Clock.app */;
@@ -406,8 +403,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Digital Clock/Preview Content\"";
 				DEVELOPMENT_TEAM = 5736QK4NZX;
 				ENABLE_PREVIEWS = YES;
@@ -419,7 +417,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "xcv58.digital-clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
@@ -434,8 +432,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Digital Clock/Preview Content\"";
 				DEVELOPMENT_TEAM = 5736QK4NZX;
 				ENABLE_PREVIEWS = YES;
@@ -447,7 +446,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "xcv58.digital-clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
@@ -530,13 +529,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		DF13A7F02B6F082D000D0FBC /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DF13A7E32B6F082D000D0FBC /* Project object */;
 }
