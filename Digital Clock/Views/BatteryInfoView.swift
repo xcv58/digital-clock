@@ -19,7 +19,8 @@ struct BatteryInfoView: View {
                                 // Battery level
                                 RoundedRectangle(cornerRadius: 3)
                                     .fill(batteryLevelColor)
-                                    .frame(width: CGFloat(max(0, batteryLevel)) * 68, height: 28) // Adjust width for battery level
+                                    // Adjust width for battery level, accounting for stroke width
+                                    .frame(width: CGFloat(max(0, batteryLevel)) * (60 - 4), height: 28)
                                 Spacer(minLength: 0) // Keeps the filled part to the left
                             }
                         )
@@ -27,7 +28,7 @@ struct BatteryInfoView: View {
                     // Battery nipple
                     RoundedRectangle(cornerRadius: 1)
                         .frame(width: 5, height: 14) // Size of the nipple
-                        .offset(x: 36, y: 0) // Adjust based on the main body's size
+                        .offset(x: 31, y: 0) // Adjust based on the main body's size
                         .foregroundColor(.gray)
                     
                     HStack(spacing: 2) {
