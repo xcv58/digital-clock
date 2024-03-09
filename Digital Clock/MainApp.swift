@@ -8,14 +8,14 @@ struct MainApp: App {
         WindowGroup(id: "main") {
             ContentView().environmentObject(defaultWindowView)
         }
-        .windowStyle(.automatic)
+        .windowStyle(.plain)
         .windowResizability(.contentSize)
         
         WindowGroup(for: WindowView.ID.self) {$windowID in
             let windowView = WindowView(id: windowID!)
             ContentView().environmentObject(windowView)
         }
-        .windowStyle(.automatic)
+        .windowStyle(.plain)
         .windowResizability(.contentSize)
     }
 }
