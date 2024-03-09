@@ -4,16 +4,16 @@ import SwiftUI
 struct MainApp: App {
     
     var body: some Scene {
+        let defaultWindowView = WindowView(id: "")
         WindowGroup(id: "main") {
-            ContentView().environmentObject(WindowView(id: ""))
-                .persistentSystemOverlays(.hidden)
+            ContentView().environmentObject(defaultWindowView)
         }
         .windowStyle(.automatic)
         .windowResizability(.contentSize)
         
         WindowGroup(for: WindowView.ID.self) {$windowID in
-            ContentView().environmentObject(WindowView(id: windowID!))
-                .persistentSystemOverlays(.hidden)
+            let windowView = WindowView(id: windowID!)
+            ContentView().environmentObject(windowView)
         }
         .windowStyle(.automatic)
         .windowResizability(.contentSize)

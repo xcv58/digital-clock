@@ -15,6 +15,7 @@ struct DigitalClock: View {
             .buttonStyle(.plain)
             .padding()
         }
+        .persistentSystemOverlays(.hidden)
     }
 }
 
