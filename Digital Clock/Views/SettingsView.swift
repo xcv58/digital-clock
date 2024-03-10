@@ -20,6 +20,7 @@ struct SettingsView: View {
                     Toggle("Battery", isOn: $view.showBatteryInfo)
                     Toggle("24 Hour", isOn: $view.enable24H)
                     Toggle("Second", isOn: $view.showSecond)
+                    Toggle("Background", isOn: $view.hasGlassBackground)
                     Button(action:{ openWindow(value: WindowView().id) }) {
                         Label("New Window", systemImage: "plus.square.on.square")
                     }

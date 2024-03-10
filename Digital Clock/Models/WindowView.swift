@@ -37,7 +37,7 @@ class WindowView: Identifiable, Codable, Hashable, ObservableObject {
     @Published var width: CGFloat = 400
     @Published var height: CGFloat = 200
     @Published var showSettings = false
-    
+
     public func mainView() {
         self.showSettings = false
         self.setDimensions(width: 400, height: 200)
@@ -45,7 +45,7 @@ class WindowView: Identifiable, Codable, Hashable, ObservableObject {
     
     public func settingsView() {
         self.showSettings = true
-        self.setDimensions(width: 400, height: 300)
+        self.setDimensions(width: 400, height: 350)
     }
     
     private func setDimensions(width: CGFloat, height: CGFloat) {
@@ -57,6 +57,7 @@ class WindowView: Identifiable, Codable, Hashable, ObservableObject {
         self.id = id
         self.enable24H = value(forKey: UserDefaults.Keys.enable24H, windowID: self.id, defaultValue: true)
         self.showBatteryInfo = value(forKey: UserDefaults.Keys.showBatteryInfo, windowID: self.id, defaultValue: true)
+        self.hasGlassBackground = value(forKey: UserDefaults.Keys.hasGlassBackground, windowID: self.id, defaultValue: false)
         self.showSecond = value(forKey: UserDefaults.Keys.showSecond, windowID: self.id, defaultValue: true)
         self.timeZone = value(forKey: UserDefaults.Keys.timeZone, windowID: self.id, defaultValue: "UTC")
         let windowIds = loadWindowIDs()
@@ -69,6 +70,7 @@ class WindowView: Identifiable, Codable, Hashable, ObservableObject {
         case id
         case enable24H
         case showBatteryInfo
+        case hasGlassBackground
         case showSecond
         case timeZone
     }
@@ -80,6 +82,7 @@ class WindowView: Identifiable, Codable, Hashable, ObservableObject {
         id = try container.decode(String.self, forKey: .id)
         enable24H = try container.decode(Bool.self, forKey: .enable24H)
         showBatteryInfo = try container.decode(Bool.self, forKey: .showBatteryInfo)
+        hasGlassBackground = try container.decode(Bool.self, forKey: .hasGlassBackground)
         showSecond = try container.decode(Bool.self, forKey: .showSecond)
         timeZone = try container.decode(String.self, forKey: .timeZone)
         
@@ -95,6 +98,7 @@ class WindowView: Identifiable, Codable, Hashable, ObservableObject {
         try container.encode(id, forKey: .id)
         try container.encode(enable24H, forKey: .enable24H)
         try container.encode(showBatteryInfo, forKey: .showBatteryInfo)
+        try container.encode(hasGlassBackground, forKey: .hasGlassBackground)
         try container.encode(showSecond, forKey: .showSecond)
         try container.encode(timeZone, forKey: .timeZone)
         // Note: @Published properties are not encoded here
@@ -122,6 +126,12 @@ class WindowView: Identifiable, Codable, Hashable, ObservableObject {
         }
     }
     
+    @Published var hasGlassBackground: Bool {
+        didSet {
+            UserDefaults.standard.set(hasGlassBackground, forKey: UserDefaults.Keys.hasGlassBackground, windowID: self.id)
+        }
+    }
+
     @Published var showSecond: Bool {
         didSet {
             UserDefaults.standard.set(showSecond, forKey: UserDefaults.Keys.showSecond, windowID: self.id)

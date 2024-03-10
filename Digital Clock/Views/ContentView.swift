@@ -11,8 +11,11 @@ struct ContentView: View {
                 .backgroundStyle(.clear)
                 .glassBackgroundEffect()
         } else {
-            DigitalClock()
-                .frame(width: view.width, height: view.height)
+            if (view.hasGlassBackground) {
+                DigitalClock().frame(width: view.width, height: view.height).background().backgroundStyle(.clear).glassBackgroundEffect()
+            } else {
+                DigitalClock().frame(width: view.width, height: view.height)
+            }
         }
     }
 }

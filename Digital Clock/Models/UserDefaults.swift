@@ -21,5 +21,6 @@ extension UserDefaults {
         static let showBatteryInfo = "showBatteryInfo"
         static let showSecond = "showSeconds"
         static let timeZone = "timeZone"
+        static let hasGlassBackground = "hasGlassBackground"
     }
 }
