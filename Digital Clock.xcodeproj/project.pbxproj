@@ -33,7 +33,6 @@
 
 /* Begin PBXFileReference section */
 		DF13A7EB2B6F082D000D0FBC /* Digital Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF13A7EF2B6F082D000D0FBC /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		DF13A7F22B6F082D000D0FBC /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		DF13A7F42B6F082D000D0FBC /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		DF13A7F82B6F082D000D0FBC /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
@@ -104,7 +103,6 @@
 		DF13A7EE2B6F082D000D0FBC /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				DF13A7EF2B6F082D000D0FBC /* RealityKitContent */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
