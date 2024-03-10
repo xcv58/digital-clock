@@ -20,7 +20,8 @@ struct BatteryInfoView: View {
                                 RoundedRectangle(cornerRadius: 3)
                                     .fill(batteryLevelColor)
                                     // Adjust width for battery level, accounting for stroke width
-                                    .frame(width: CGFloat(max(0, batteryLevel)) * (60 - 4), height: 28)
+                                    .frame(width: CGFloat(max(0, batteryLevel)) * (60 - 2), height: 28)
+                                    .offset(x: 1, y: 0)
                                 Spacer(minLength: 0) // Keeps the filled part to the left
                             }
                         )
